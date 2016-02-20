@@ -31,7 +31,7 @@ package starlingbuilder.editor.ui
         public function ComponentHelpButton()
         {
             super();
-			question_mark_texture = Texture.fromBitmap(new question_mark());
+	  question_mark_texture = Texture.fromBitmap(new question_mark());
             _button = new Button(question_mark_texture);
             _button.scaleX = _button.scaleY = 0.5;
             _button.addEventListener(Event.TRIGGERED, onHelp);

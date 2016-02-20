@@ -450,8 +450,8 @@ package starlingbuilder.editor.ui
         {
             var hint:String = _documentManager.historyManager.getNextRedoHint();
             var item:NativeMenuItem = MainMenu.instance.getItemByName(MainMenu.REDO);
-			if(item == null)//FB兼容代码
-				return;//FB兼容代码
+	  if(item == null)//FB兼容代码
+		  return;//FB兼容代码
             if (hint)
             {
                 item.label = MainMenu.REDO + " " + hint;
@@ -503,12 +503,12 @@ package starlingbuilder.editor.ui
             menu.registerAction(MainMenu.EDIT_TEMPLATE, onEditTemplate);
             menu.registerAction(MainMenu.DELETE_TEMPLATE, onDeleteTemplate);
 
-			if(menu.getItemByName(MainMenu.SHOW_TEXT_BORDER)) //FB兼容代码
-				menu.getItemByName(MainMenu.SHOW_TEXT_BORDER).checked = _documentManager.showTextBorder;
-			if(menu.getItemByName(MainMenu.SNAP_PIXEL)) //FB兼容代码
-				menu.getItemByName(MainMenu.SNAP_PIXEL).checked = _documentManager.snapPixel;
-			if(menu.getItemByName(MainMenu.RESIZABLE_BOX)) //FB兼容代码
-				menu.getItemByName(MainMenu.RESIZABLE_BOX).checked = _documentManager.enableBoundingBox;
+	  if(menu.getItemByName(MainMenu.SHOW_TEXT_BORDER)) //FB兼容代码
+	  	  menu.getItemByName(MainMenu.SHOW_TEXT_BORDER).checked = _documentManager.showTextBorder;
+	  if(menu.getItemByName(MainMenu.SNAP_PIXEL)) //FB兼容代码
+		  menu.getItemByName(MainMenu.SNAP_PIXEL).checked = _documentManager.snapPixel;
+	  if(menu.getItemByName(MainMenu.RESIZABLE_BOX)) //FB兼容代码
+		  menu.getItemByName(MainMenu.RESIZABLE_BOX).checked = _documentManager.enableBoundingBox;
 
             menu.registerAction(MainMenu.UNDO, onUndo);
             menu.registerAction(MainMenu.REDO, onRedo);
@@ -565,8 +565,8 @@ package starlingbuilder.editor.ui
         private function updateRecentOpenMenu():void
         {
             var menu:NativeMenu = MainMenu.instance.root;
-			if(menu.getItemByName(MainMenu.FILE) == null) //FB兼容代码
-				return; //FB兼容代码
+	  if(menu.getItemByName(MainMenu.FILE) == null) //FB兼容代码
+		  return; //FB兼容代码
             var subMenu:NativeMenu = menu.getItemByName(MainMenu.FILE).submenu.getItemByName(MainMenu.OPEN_RECENT).submenu;
 
             subMenu.removeAllItems();

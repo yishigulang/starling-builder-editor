@@ -32,7 +32,7 @@ package starlingbuilder.util.ui.inspector
             super();
 
             _isSelected = isSelected;
-			link_sign_texture = Texture.fromBitmap(new link_sign());
+	  link_sign_texture = Texture.fromBitmap(new link_sign());
             layout = new VerticalLayout();
             _label1 = FeathersUIUtil.labelWithText("⌉");
             _linkButton = new Button(link_sign_texture);

@@ -45,8 +45,8 @@ package starlingbuilder.util.menu
                 if (data.menu)
                 {
                     menu.addSubmenu(new NativeMenu(), data.label);
-					if(menu.getItemAt(menu.numItems - 1)) //FB兼容代码
-						menu.getItemAt(menu.numItems - 1).name = data.label;;
+			  if(menu.getItemAt(menu.numItems - 1)) //FB兼容代码
+				  menu.getItemAt(menu.numItems - 1).name = data.label;
                 }
                 else
                 {
@@ -81,8 +81,8 @@ package starlingbuilder.util.menu
 
             _rootMenu.addSubmenu(menu, label);
 			
-			if(_rootMenu.getItemAt(_rootMenu.numItems - 1)) //FB兼容代码
-				_rootMenu.getItemAt(_rootMenu.numItems - 1).name = label;
+	  if(_rootMenu.getItemAt(_rootMenu.numItems - 1)) //FB兼容代码
+		  _rootMenu.getItemAt(_rootMenu.numItems - 1).name = label;
             _subMenus.push(menu);
         }
 
