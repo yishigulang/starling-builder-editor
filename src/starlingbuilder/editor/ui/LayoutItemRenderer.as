@@ -18,7 +18,7 @@ package starlingbuilder.editor.ui
     import feathers.events.DragDropEvent;
     import feathers.layout.HorizontalLayout;
     import feathers.layout.VerticalLayout;
-
+    
     import starling.display.Button;
     import starling.display.DisplayObject;
     import starling.display.DisplayObjectContainer;
@@ -27,7 +27,8 @@ package starlingbuilder.editor.ui
     import starling.events.Touch;
     import starling.events.TouchEvent;
     import starling.events.TouchPhase;
-
+    import starling.textures.Texture;
+    
     import starlingbuilder.editor.UIEditorApp;
     import starlingbuilder.editor.data.EmbeddedImages;
     import starlingbuilder.editor.history.MoveLayerOperation;
@@ -105,7 +106,7 @@ package starlingbuilder.editor.ui
             layout.verticalAlign = HorizontalLayout.VERTICAL_ALIGN_MIDDLE;
             _group2 = new LayoutGroup();
             _group2.layout = layout;
-
+			EmbeddedImages.expand_sign_texture = Texture.fromBitmap(new EmbeddedImages.expand_sign())
             _sign = new Button(EmbeddedImages.expand_sign_texture);
             _sign.alignPivot();
             _sign.addEventListener(Event.TRIGGERED, onTrigger);
